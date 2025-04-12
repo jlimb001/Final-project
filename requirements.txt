@@ -1,0 +1,8 @@
+joblib==1.4.2
+numpy==2.2.4
+package_name==0.1
+scikit-learn==1.6.1
+scipy==1.15.2
+setuptools==78.1.0
+threadpoolctl==3.6.0
+wheel==0.45.1

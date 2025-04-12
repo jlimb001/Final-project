@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Hypertension Predictor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">Hypertension Predictor</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">About This Application</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5>What is Hypertension?</h5>
+                        <p>Hypertension, or high blood pressure, is a common condition where the long-term force of blood against your artery walls is high enough that it may eventually cause health problems, such as heart disease.</p>
+                        
+                        <h5>How Does This Predictor Work?</h5>
+                        <p>This application uses machine learning algorithms trained on NHANES 2017-2020 data to predict hypertension risk based on physical measurements. The model analyzes factors such as BMI, waist circumference, and other body measurements to determine the likelihood of hypertension.</p>
+                        
+                        <h5>Data Source</h5>
+                        <p>The National Health and Nutrition Examination Survey (NHANES) is a program of studies designed to assess the health and nutritional status of adults and children in the United States. The survey combines interviews and physical examinations.</p>
+                        
+                        <h5>Limitations</h5>
+                        <p>This tool is for educational purposes only and should not replace professional medical advice. The predictions are based on statistical models and may not be accurate for all individuals. Always consult with a healthcare provider for proper diagnosis and treatment.</p>
+                        
+                        <h5>Risk Factors for Hypertension</h5>
+                        <ul>
+                            <li>Age (risk increases as you get older)</li>
+                            <li>Family history</li>
+                            <li>Being overweight or obese</li>
+                            <li>Not being physically active</li>
+                            <li>Using tobacco</li>
+                            <li>Too much salt (sodium) in your diet</li>
+                            <li>Too little potassium in your diet</li>
+                            <li>Excessive alcohol consumption</li>
+                            <li>Stress</li>
+                            <li>Certain chronic conditions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2025 Hypertension Predictor</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
